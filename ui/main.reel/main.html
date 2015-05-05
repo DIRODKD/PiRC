@@ -17,35 +17,18 @@
                         "0": ""
                     }
                 },
-                "contenteditable": "true",
+                "contenteditable": "false",
                 "dir": "ltr",
                 "draggable": "true"
             }
         },
-        "button": {
-            "prototype": "digit/ui/button.reel",
+        "action": {
+            "prototype": "ui/action.reel",
             "properties": {
-                "element": {"#": "button"},
-                "enabled": true,
-                "label": "ON"
-            }
-        },
-        "button2": {
-            "prototype": "digit/ui/button.reel",
-            "properties": {
-                "element": {"#": "button2"},
-                "enabled": true,
-                "label": "OFF"
-            }
-        },
-        "title": {
-            "prototype": "digit/ui/title.reel",
-            "properties": {
-                "element": {"#": "title"},
-                "contenteditable": "true",
+                "element": {"#": "action"},
+                "contenteditable": "false",
                 "dir": "ltr",
-                "draggable": "true",
-                "value": "Relais Action"
+                "draggable": "true"
             }
         }
     }
@@ -53,11 +36,7 @@
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
-        <h1 data-montage-id="title">
-
-        </h1>
-        <button data-montage-id="button"></button>
-        <button data-montage-id="button2"></button>
+        <div data-montage-id="action"></div>
     </div>
 </body>
 </html>
